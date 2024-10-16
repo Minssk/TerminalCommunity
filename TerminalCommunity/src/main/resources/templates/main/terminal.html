@@ -1,0 +1,22 @@
+
+<html layout:decorate="~{main_layout}">
+	<div layout:fragment="content" class="terminal_wrap">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/terminal/terminal.css}">
+		<div class="content_wrap">
+			
+			<div class="cmd">
+				<div class="cmd_wrap main_cmd">
+					<span class="host_name">anonymous@terminal.com</span>
+					<span class="host_colon">:</span>
+					<span class="host_path">/</span>
+					<span class="host_point">$&nbsp;</span>
+					<input id="cmd_input" class="cmd_input" value=""></input>
+				</div>
+			</div>
+			
+		</div>
+		
+		<script th:src="@{/js/terminal/input_send.js}" crossorigin="anonymous"></script>
+		<script th:src="@{/js/terminal/focus.js}" crossorigin="anonymous"></script>
+	</div>
+</html>
