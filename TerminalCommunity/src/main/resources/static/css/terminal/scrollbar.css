@@ -1,0 +1,14 @@
+.content_wrap::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+
+.content_wrap::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #22b401);
+  border-radius: 6px;
+  border-radius: 20px;
+}
+
+.content_wrap::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #00c6ff, transparent);
+}

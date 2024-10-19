@@ -14,6 +14,7 @@ cmdInput.addEventListener('keypress', function(event) {
         // 새로운 cmd_wrap 구조 만들기 (main_cmd 제외)
         const newCmdWrap = document.createElement('div');
         newCmdWrap.classList.add('cmd_wrap');
+		newCmdWrap.classList.add('sub_line');
 
         // 안전하게 요소 생성
         const hostName = document.createElement('span');
@@ -47,6 +48,8 @@ cmdInput.addEventListener('keypress', function(event) {
         const mainCmd = document.querySelector('.main_cmd');
         cmdDiv.insertBefore(newCmdWrap, mainCmd); // main_cmd 위에 추가
 
+		commandSend(inputValue);
+		
         // 입력 필드 초기화
         this.value = "";
 		scrollBottom();

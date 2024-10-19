@@ -1,10 +1,21 @@
 
 <html layout:decorate="~{main_layout}">
 	<div layout:fragment="content" class="terminal_wrap">
-		<link rel="stylesheet" type="text/css" th:href="@{/css/terminal/terminal.css}">
 		<div class="content_wrap">
 			
 			<div class="cmd">
+				
+				<div class="cmd_wrap">
+					<span class="info_text">
+						This website is called 'TerminalCommunity' using a virtual terminal
+					</span>
+				</div>
+				<div class="cmd_wrap">
+					<span class="info_text">
+						Fill out the contents in the input window below and press the keyboard 'Enter'' to activate the program.
+					</span>
+				</div>
+								
 				<div class="cmd_wrap main_cmd">
 					<span class="host_name">anonymous@terminal.com</span>
 					<span class="host_colon">:</span>
@@ -16,7 +27,10 @@
 			
 		</div>
 		
+		<link rel="stylesheet" type="text/css" th:href="@{/css/terminal/terminal.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/terminal/scrollbar.css}">
 		<script th:src="@{/js/terminal/input_send.js}" crossorigin="anonymous"></script>
 		<script th:src="@{/js/terminal/focus.js}" crossorigin="anonymous"></script>
+		<script th:src="@{/js/terminal/command.js}" crossorigin="anonymous"></script>
 	</div>
 </html>
